@@ -43,12 +43,12 @@ body{
 		min-height: 100vh;
 		border-top-left-radius: 5rem;
 		border-top-right-radius: 5rem;
-    padding-bottom: 400px;
+    padding-bottom: 300px;
 		position: relative;
     @media screen and (max-width: 768px) {
       border-top-left-radius: 2.5rem;
       border-top-right-radius: 2.5rem;
-      padding-bottom: 24vh;
+      padding-bottom: 14vh;
     }
     .iconFixed{
       position: absolute;
@@ -456,7 +456,7 @@ body{
 .footer{    
   position: fixed;
   width: 130vw;
-  height: 300px;
+  height: 150px;
   background: url(/footer-solo.png);
   background-size: cover;
   bottom: 0;
@@ -464,7 +464,7 @@ body{
 	-webkit-animation: animateCloud 35s linear infinite;
   pointer-events: none;
   @media screen and (max-width: 768px) {
-    height: 20vh;
+    height: 10vh;
     background-position: top center;
     background-size: 200% auto;
   }
