@@ -1,16 +1,23 @@
 import Image from "next/image";
+import Form from "./components/form";
 
 export default function Home() {
   return (
     <>
     <div className="wrapper">
+      <span className="iconFixed iconFixed--luna"></span>
+      <span className="iconFixed iconFixed--luna iconFixed--luna--clone"></span>
+      <span className="iconFixed iconFixed--nuvola"></span>
+      <span className="iconFixed iconFixed--nuvola iconFixed--nuvola--clone"></span> 
+      <span className="iconFixed iconFixed--stella"></span>
+      <span className="iconFixed iconFixed--stella iconFixed--stella--clone"></span>
       <div className="logo celeste">
         <span>Celeste</span>		
       </div>
       <div className="hero">
         <div className="hero__col hero__col--txt">
           <h1>Ready to pop!</h1>
-          <p>Velit voluptate cillum tempor aute ex ut enim laboris exercitation qui tempor.</p>
+          <p>Pannolini, unicorni e drink! Siamo pronte per festeggiare l'arrivo di Celeste!</p>
         </div>
         <div className="hero__col hero__col--img">
           <div className="hero__ball">
@@ -31,16 +38,96 @@ export default function Home() {
             </span>
         </div>
       </div>
-      {/* <div className="maps">
-        <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2799.0468113219304!2d9.195179999999999!3d45.4487128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786c41a11d2dafd%3A0x524fe7539c28512a!2sCircolo%20Arci%20Bellezza!5e0!3m2!1sit!2sit!4v1714913280472!5m2!1sit!2sit" 
-        width="600" 
-        height="450" 
-        allowfullscreen="" 
-        loading="lazy" 
-        referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-      </div> */}
+      <div className="copy">
+        <div className="copy__text">
+          <span className="icona">
+            <Image
+              src="/spillo.png"        
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              alt="Cele"
+              priority={true}	
+              fill
+              layout='fill'
+              objectFit='contain'
+            />
+          </span>
+          <h2>Non prendere impegni.</h2>
+          <p>Quando?<br/><span>22 Giugno 2024</span><br/>ore 19:00</p>
+        </div>
+      </div>
+      <div className="hero hero--reverse">
+        <div className="hero__col hero__col--txt hero__col--txt--center">
+          <h2>Ci vediamo qui!</h2>
+          <span className="logo-arci"><img src="/logo-arci.png" /></span>
+          <p><strong>Via G.Bellezza 16/A – Milano</strong><br/>La tessera Arci è obbligatoria, rubala a qualche amico oppure <a href="https://www.arcibellezza.it/tesseramento/" target="_blank">falla qui</a></p>
+        </div>
+        <div className="hero__col hero__col--img hero__col--left">
+          <div className="hero__ball hero__ball--orange">
+          </div>
+
+          <span className="hero__ball__img hero__ball__img--orange">
+              <span className="icon icon--biberon"></span>
+              <Image
+                src="/unicorn-2.png"        
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                alt="Cele"
+                priority={true}	
+                fill
+                layout='fill'
+                objectFit='contain'
+              />
+            </span>
+        </div>
+      </div>
+      <div className="copy"> 
+        <div className="copy__text">
+          <span className="icona">
+            <Image
+              src="/spillo.png"        
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              alt="Cele"
+              priority={true}	
+              fill
+              layout='fill'
+              objectFit='contain'
+            />
+          </span>
+          <h2>Ci sarai? Cele non vede l'ora!</h2>
+          <p><span className="medium">Conferma la tua partecipazione.</span></p>
+          <div className="copy__text__cta">
+            <form>
+              <input type="text" placeholder="Nome e cognome" />
+              <button>Ci sarò!</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div className="hero hero--close">
+        <div className="hero__col hero__col--txt hero__col--txt--center">
+          <h2>Ready to poop!</h2>
+          <p>Tutto quello che vogliamo è la tua presenza! Ma se la tua domanda è <strong>"Cosa vi serve?"</strong> qui trovi una lista di cose utili non futili... forse!</p>
+          <a className="amazon" target="_blank" href="https://www.amazon.it/baby-reg/cristina-dicillo-agosto-2024-milano/2BIVN6750TILS?ref_=cm_sw_r_apin_dp_AR0GF729TK2ZBXQSBS10&language=it_IT">
+            <img src="/logo-amazon-b.png" />
+          </a>      
+        </div>
+        <div className="hero__col hero__col--img">
+          <div className="hero__ball">
+          </div>
+
+          <span className="hero__ball__img">
+              <Image
+                src="/pannolone-2.png"        
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                alt="Cele"
+                priority={true}	
+                fill
+                layout='fill'
+                objectFit='contain'
+              />
+            </span>
+        </div>
+      </div>
     </div>
     <div className="footer">
     </div>
