@@ -18,7 +18,7 @@ export default async function Home() {
       <div className="hero">
         <div className="hero__col hero__col--txt">
           <h1>Ready to pop!</h1>
-          <p>Pannolini, unicorni e drink! Siamo pronte per festeggiare l'arrivo di Celeste!</p>
+          <p>Pannolini, unicorni e drink! Siamo pronte per festeggiare l'arrivo di Celeste!<br/><strong>Desscode: UNICORNI!</strong></p>
         </div>
         <div className="hero__col hero__col--img">
           <div className="hero__ball">
