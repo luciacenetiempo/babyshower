@@ -272,6 +272,10 @@ body{
         &--orange{
           background-color: #F8D9C4;
           top: 0;
+        }         
+        &--yellow{
+          background-color: #FAEDCB;
+          top: 0;
         }
         @media screen and (max-width: 768px) {
           width: 70vw;
@@ -397,6 +401,30 @@ body{
             }
           }
         }
+        .buttonCTA{
+          background-color: transparent;
+          border: 0;
+          border-radius: 1.3rem;
+          padding: 1.1rem 1.5rem;
+          font-size: 1.1em;
+          color: #BC6969;
+          font-family: "Raleway", sans-serif;
+          cursor: pointer;
+          box-shadow: 8px 10px 20px rgba(185, 100, 100, 0.14);
+          text-transform: uppercase;
+          text-decoration: none;
+          margin-top: 2rem;
+          text-shadow: -1px -1px 3px rgba(0, 0, 0, 0.15);
+          position: relative;
+          border: 1px dashed #BC6969;
+          .iconcalendar{    
+            position: absolute;
+            font-size: 2rem;
+            left: -20px;
+            top: 5px;
+            transform: rotate(-45deg);
+          }
+        }
         &__cta{
           display: flex;
           flex-flow: column;
@@ -444,8 +472,9 @@ body{
               color: white;
               font-family: "Raleway", sans-serif;
               cursor: pointer;
-              box-shadow: 8px 10px 20px #eb50a426;
+              box-shadow: 8px 10px 20px rgba(235, 80, 164, 0.15);
               text-transform: uppercase;
+              text-shadow: -1px -1px 3px rgba(0, 0, 0, 0.15);
             }
           }
         }

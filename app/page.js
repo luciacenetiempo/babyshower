@@ -18,7 +18,7 @@ export default async function Home() {
       <div className="hero">
         <div className="hero__col hero__col--txt">
           <h1>Ready to pop!</h1>
-          <p>Pannolini, unicorni e drink! Siamo pronte per festeggiare l'arrivo di Celeste!<br/><strong>Desscode: UNICORNI!</strong></p>
+          <p>Pannolini, unicorni e drink! Siamo pronte per festeggiare l'arrivo di Celeste!<br/><strong>Desscode: 🦄 UNICORNI! 🦄</strong></p>
         </div>
         <div className="hero__col hero__col--img">
           <div className="hero__ball">
@@ -54,6 +54,7 @@ export default async function Home() {
           </span>
           <h2>Non prendere impegni.</h2>
           <p>Quando?<br/><span>22 Giugno 2024</span><br/>ore 19:00</p>
+          <a className="buttonCTA" href="https://calendar.app.google/nFJWzxkM8wE8iQVK6" target="_blank"><span className="iconcalendar">🗓️</span> Salva in calendario</a>
         </div>
       </div>
       <div className="hero hero--reverse">
@@ -106,7 +107,7 @@ export default async function Home() {
           </a>      
         </div>
         <div className="hero__col hero__col--img">
-          <div className="hero__ball">
+          <div className="hero__ball hero__ball--yellow">
           </div>
 
           <span className="hero__ball__img">
