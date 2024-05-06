@@ -1,6 +1,8 @@
 import Image from "next/image";
+// import { getSheetsData } from "./_lib/readSheet";
+import FormApply from "./components/FormApply";
 
-export default function Home() {
+export default async function Home() {
   return (
     <>
     <div className="wrapper">
@@ -91,14 +93,7 @@ export default function Home() {
               objectFit='contain'
             />
           </span>
-          <h2>Ci sarai? Cele non vede l'ora!</h2>
-          <p><span className="medium">Conferma la tua partecipazione.</span></p>
-          <div className="copy__text__cta">
-            <form>
-              <input type="text" placeholder="Nome e cognome" />
-              <button>Ci sarò!</button>
-            </form>
-          </div>
+            <FormApply />
         </div>
       </div>
 
